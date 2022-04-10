@@ -5,7 +5,7 @@ export default (polynomial: string, startingState: number) => {
 
   const generator = function* () {
     while (true) {
-      yield parseInt(ARRAY_8.map(() => lfsr.next().value).join(), 2)
+      yield parseInt(ARRAY_8.map(() => lfsr.next().value).join(''), 2)
     }
   }
 
