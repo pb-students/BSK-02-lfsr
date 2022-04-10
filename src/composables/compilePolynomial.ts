@@ -1,7 +1,7 @@
 const EXPRESSION_REGEX = /^x\s*\*\*\s*(\d+)$/
 
-export default (polynomialString: string) => {
-  const exponents = new Set()
+export default (polynomialString: string): Set<number> => {
+  const exponents = new Set<number>()
   let hasConstantOne = false
   for (const expression of polynomialString.split('+').map(e => e.trim())) {
     switch (expression) {

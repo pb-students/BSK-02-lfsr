@@ -23,6 +23,6 @@ const encrypt = (message: string, key: number) => {
   }                                                                        
 
 export default () => ({
-    encrypt,
-    decrypt
-  })
+  encrypt,
+  decrypt
+})

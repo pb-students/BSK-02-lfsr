@@ -1,5 +1,3 @@
-import compilePolynomial from "./compilePolynomial"
-
 function* lfsr (taps: Set<number>, startingState: number) {
   const max = Math.max(...taps)
 
